@@ -1,0 +1,130 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.form1 {
+  width: 50%; /* Set the width of the form to half the container */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form1 h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 8px rgba(41, 128, 185, 0.4);
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+.btnform {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnform:hover {
+  background-color: #2980b9;
+}
+
+label{
+  text-align: start;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .contact-image {
+    margin-bottom: 20px;
+    max-height: 300px;
+  }
+
+  .form1 {
+    width: 70%; /* Adjusted form width for smaller screens */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .btnform {
+    font-size: 1rem;
+  }
+
+  .form1 {
+    width: 90%; /* Further reduce form width for very small screens */
+  }
+}
